@@ -1,0 +1,4 @@
+result from setup :
+
+
+Fatal error: Uncaught Error: Call to undefined method User::hashPassword() in C:\xampp\htdocs\randomplay\setup.php:25 Stack trace: #0 {main} thrown in C:\xampp\htdocs\randomplay\setup.php on line 25

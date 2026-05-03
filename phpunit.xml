@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    RandomPlay — phpunit.xml
+    Configuration PHPUnit 10
+
+    Pour lancer les tests :
+      composer install
+      ./vendor/bin/phpunit
+
+    Pour voir les résultats détaillés :
+      ./vendor/bin/phpunit - -testdox
+
+    Les tests utilisent SQLite en mémoire (pas besoin de MySQL)
+    grâce au pattern d'injection de dépendance (PDO passé au constructeur)
+-->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false">
+
+    <testsuites>
+        <testsuite name="RandomPlay Test Suite">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage>
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+    </coverage>
+
+</phpunit>
