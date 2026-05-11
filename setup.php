@@ -24,9 +24,9 @@ $db = Database::getInstance();
 // Comptes de test avec leurs mots de passe en clair
 // Le hash bcrypt sera calculé par PHP et inséré via UPDATE
 $users = [
-    ['pseudo' => 'admin_rp', 'mdp' => 'admin123'],
-    ['pseudo' => 'marie_d',  'mdp' => 'client123'],
-    ['pseudo' => 'lucas_m',  'mdp' => 'client123'],
+    ['pseudo' => 'admin_rp', 'mdp' => 'C.5995465709.k'],
+    ['pseudo' => 'marie_d',  'mdp' => 'C.5995465709.k'],
+    ['pseudo' => 'lucas_m',  'mdp' => 'C.5995465709.k'],
 ];
 
 $updated = 0;
